@@ -2,7 +2,6 @@ package ua.phonebook.dao;
 
 import ua.phonebook.model.entity.Contact;
 
-import java.io.IOException;
 import java.util.List;
 
 public interface ContactDAO {

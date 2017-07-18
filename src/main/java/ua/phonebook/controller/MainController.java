@@ -1,7 +1,6 @@
 package ua.phonebook.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.orm.hibernate4.SpringSessionContext;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import ua.phonebook.dao.UserDAO;
 import ua.phonebook.model.Page;
 import ua.phonebook.model.entity.Contact;
 import ua.phonebook.model.entity.User;
@@ -21,7 +19,6 @@ import ua.phonebook.validation.ContactValidator;
 import ua.phonebook.validation.UserValidator;
 
 import javax.servlet.http.HttpSession;
-import javax.validation.Valid;
 
 @Controller
 public class MainController {

@@ -9,7 +9,6 @@ import ua.phonebook.model.Page;
 import ua.phonebook.model.entity.Contact;
 import ua.phonebook.service.ContactService;
 
-import java.io.IOException;
 import java.util.List;
 
 @Service

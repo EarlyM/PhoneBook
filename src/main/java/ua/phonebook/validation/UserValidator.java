@@ -2,7 +2,6 @@ package ua.phonebook.validation;
 
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
-import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 import ua.phonebook.model.entity.User;
 
@@ -10,7 +9,7 @@ import java.util.regex.Pattern;
 
 @Component
 public class UserValidator implements Validator {
-    Pattern usernamePattern = Pattern.compile("[A-z]{3,}");
+    private Pattern usernamePattern = Pattern.compile("[A-z]{3,}");
     @Override
     public boolean supports(Class<?> aClass) {
         return User.class.equals(aClass);

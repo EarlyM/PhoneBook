@@ -1,6 +1,5 @@
 package ua.phonebook.dao.filestorage;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import ua.phonebook.dao.UserDAO;
 import ua.phonebook.model.entity.User;
 
